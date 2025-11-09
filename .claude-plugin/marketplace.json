@@ -1,0 +1,20 @@
+{
+  "name": "finsight-plugins",
+  "owner": {
+    "name": "Finsight Analytics LLP",
+    "email": "contact@finsightanalytics.com"
+  },
+  "description": "Professional data analytics and reconciliation plugins for Claude Code",
+  "plugins": [
+    {
+      "name": "data-reconciliation",
+      "source": "./plugins/data-reconciliation",
+      "description": "Intelligent data reconciliation toolkit with AI-powered strategy recommendations. Automatically analyzes datasets, detects data quality issues, and suggests optimal reconciliation approaches.",
+      "version": "2.0.0",
+      "type": "skill",
+      "tags": ["data", "reconciliation", "analytics", "ai", "data-quality"],
+      "author": "Finsight Analytics LLP",
+      "license": "MIT"
+    }
+  ]
+}
