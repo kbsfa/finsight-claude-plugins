@@ -28,11 +28,12 @@ An intelligent data reconciliation toolkit for Claude Code that automatically an
 - **Detailed Metrics**: Match rates, accuracy rates, processing times
 - **Issue Tracking**: Comprehensive logging of all discrepancies
 
-### 🧠 Gemini AI Integration
-- **Pattern Detection**: Identifies business patterns in mismatches
-- **Root Cause Analysis**: Understands why discrepancies occur
-- **Anomaly Explanation**: Explains unusual values in business terms
-- **Stakeholder Communication**: Translates technical issues to business language
+### 🧠 Claude AI Integration (Automatic in Claude Code)
+- **Conversational Pattern Detection**: Ask Claude to identify business patterns in mismatches
+- **Interactive Root Cause Analysis**: Claude explains why discrepancies occur in plain language
+- **Real-time Anomaly Explanation**: Get instant explanations for unusual values
+- **Stakeholder-Ready Communication**: Claude translates technical issues to business language
+- **No API Keys Required**: Works automatically when using the skill through Claude Code
 
 ## Installation as Claude Code Plugin
 

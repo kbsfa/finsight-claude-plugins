@@ -80,35 +80,28 @@ import json
 print(json.dumps(result.summary, indent=2))
 ```
 
-**Step 6: Use Gemini for intelligent analysis** (optional, when Python analysis isn't sufficient)
+**Step 6: Use Claude for intelligent analysis** (automatic when using Claude Code)
 
-Use `scripts/gemini_analyzer.py` for AI-powered insights:
+When using this skill through Claude Code, Claude automatically provides AI-powered insights:
 
-```python
-from gemini_analyzer import GeminiReconciliationAnalyzer
-import os
+**Claude Analyzes Automatically:**
+- Pattern detection in mismatches
+- Root cause analysis of discrepancies
+- Business context understanding
+- Stakeholder-ready explanations
+- Recommendations for next steps
 
-# Set API key
-os.environ['GEMINI_API_KEY'] = 'your-api-key'
-
-analyzer = GeminiReconciliationAnalyzer()
-
-# Analyze patterns in mismatches
-insights = analyzer.analyze_mismatch_patterns(
-    result.mismatches,
-    context="Financial reconciliation between GL and bank statements"
-)
-
-# Analyze unmatched records
-unmatched_insights = analyzer.analyze_unmatched_records(
-    result.unmatched_source,
-    result.unmatched_target,
-    context="Looking for timing differences vs data errors"
-)
-
-# Get reconciliation strategy recommendations
-strategy = analyzer.suggest_reconciliation_strategy(source_info, target_info)
+**Simply ask Claude in conversation:**
 ```
+"Analyze these mismatches - what patterns do you see?"
+"Why might these records be unmatched?"
+"What's the business impact of these discrepancies?"
+"Recommend next steps to resolve these issues"
+```
+
+**For Standalone Python Usage** (outside Claude Code):
+
+If running scripts directly without Claude Code, you can optionally use `gemini_analyzer.py` with Gemini API. However, this is NOT needed when using through Claude Code - Claude provides superior analysis directly!
 
 ## When to Use Python vs. Gemini
 

@@ -16,8 +16,8 @@ pyarrow>=12.0.0         # Parquet files
 # API and web
 requests>=2.31.0
 
-# AI integration
-google-generativeai>=0.3.0
+# AI integration (optional - only for standalone usage outside Claude Code)
+# google-generativeai>=0.3.0  # Not needed when using skill through Claude Code
 
 # CLI and utilities
 click>=8.1.0
